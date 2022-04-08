@@ -58,6 +58,7 @@ namespace Mail_o_bot
             this.NextEmailTime = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SubjectPatterns = new System.Windows.Forms.TextBox();
+            this.StartOnBoot = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // StartStop
@@ -314,11 +315,22 @@ namespace Mail_o_bot
             this.SubjectPatterns.Size = new System.Drawing.Size(776, 57);
             this.SubjectPatterns.TabIndex = 35;
             // 
+            // StartOnBoot
+            // 
+            this.StartOnBoot.AutoSize = true;
+            this.StartOnBoot.Location = new System.Drawing.Point(365, 119);
+            this.StartOnBoot.Name = "StartOnBoot";
+            this.StartOnBoot.Size = new System.Drawing.Size(95, 19);
+            this.StartOnBoot.TabIndex = 37;
+            this.StartOnBoot.Text = "Start on boot";
+            this.StartOnBoot.UseVisualStyleBackColor = true;
+            // 
             // MailBot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 769);
+            this.Controls.Add(this.StartOnBoot);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.SubjectPatterns);
             this.Controls.Add(this.NextEmailTime);
@@ -388,6 +400,7 @@ namespace Mail_o_bot
         private System.Windows.Forms.Label NextEmailTime;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox SubjectPatterns;
+        private System.Windows.Forms.CheckBox StartOnBoot;
     }
 }
 

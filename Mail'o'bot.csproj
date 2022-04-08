@@ -11,4 +11,10 @@
     <PackageReference Include="TaskScheduler" Version="2.10.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
